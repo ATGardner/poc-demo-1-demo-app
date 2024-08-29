@@ -10,6 +10,15 @@ worker:
   image:
     repository: codedev.jfrog.io/poc-demo-1-docker-local/worker
     tag: stable
+
 postgresql:
+  enabled: true
   auth:
+# copied over from ../../values.yaml
     postgresPassword: <path:kv/data/postgres#password>
+
+# copied over from ../../values.yaml
+redis:
+  enabled: true
+  auth: 
+    enabled: false
