@@ -12,10 +12,7 @@ spec:
     # targetRevision: 1.1.10
     repoURL: https://github.com/salesdemocf/poc-demo-1-demo-app.git
     targetRevision: HEAD
-    path: example-voting-app
-    helm:
-      valueFiles:
-        - environments/staging/values.yaml
+    path: example-voting-app/environments/staging
   destination:
     namespace: staging
     server: https://kubernetes.default.svc
